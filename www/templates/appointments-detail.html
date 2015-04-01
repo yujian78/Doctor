@@ -1,0 +1,28 @@
+<ion-view view-title="Appointment Detail">
+  <ion-content class="padding">
+    <div class="list card">
+      <div class="item item-avatar">
+
+        <img src="{{ choosenUser.Portrait }}">
+        <h2>{{ choosenUser.Name }}</h2>
+        <p>{{ choosenUser.Email }}</p>
+      </div>
+
+      <div class="item item-body">
+        
+        <p>Category: {{ appChoosen.Category }}</p>
+        <p>Time: {{ appChoosen.Time }}</p>
+        <p>Date: {{ appChoosen.Date }}</p>
+        
+      </div>
+    </div>
+
+    <div class="button-bar ">
+      <a id="click1" class="button button-balanced" ng-click="referralAppoint()">Make Referral</a>
+      <a id="click2" class="button button-calm" ng-click="followAppoint({{ appChoosen.Date }})">New Follow-up</a>
+    </div>
+
+    <p> {{ haha }}
+    </p>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,14 @@
+<ion-view view-title="Future Appointment">
+  <ion-content class="padding">
+    <div class="list card" ng-repeat="app in apps" ng-click="chooseApp(app)">
+
+      <div class="item item-divider"> {{ app.Time }}, {{ app.Date }}</div>
+      <div class="item item-avatar">
+        <img src="{{ doctor.Image }}">
+        <h2>({{ app.Category }})</h2>
+         <p>{{ app.UserEmail }}</p>      
+      </div>
+    </div>
+
+  </ion-content>
+</ion-view>
